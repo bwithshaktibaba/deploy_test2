@@ -1,0 +1,41 @@
+.contact-container {
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #6b6b6b 25%, #8c8c8c 25%, #8c8c8c 50%, #6b6b6b 50%, #6b6b6b 75%, #8c8c8c 75%, #8c8c8c 100%);
+  background-size: 28.28px 28.28px;
+  color: white;
+}
+
+.typewriter {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  font-size: 1.2rem;
+  width: 0;
+  animation: typing 5s steps(40, end) forwards, blink 0.8s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  0%, 100% { border-color: transparent }
+  50% { border-color: #333 }
+}
+
+/* Optional: style the anchor link */
+.typewriter a {
+  color: #007bff;
+  text-decoration: none;
+}
+.typewriter a:hover {
+  text-decoration: underline;
+}
